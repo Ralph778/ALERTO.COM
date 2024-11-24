@@ -34,6 +34,55 @@
       Login
      </button>
     </form>
+    <p class="mt-4 text-center">
+     Don't have an account?
+     <a class="text-blue-500 hover:underline" href="#">
+      Register
+     </a>
+    </p>
+   </div>
+  </div>
+  <!-- Register Page -->
+  <div class="min-h-screen flex items-center justify-center bg-gray-200">
+   <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+    <h2 class="text-2xl font-bold mb-6 text-center">
+     Register for Alert-O
+    </h2>
+    <form>
+     <div class="mb-4">
+      <label class="block text-gray-700">
+       Full Name
+      </label>
+      <input class="w-full px-3 py-2 border rounded-lg" placeholder="Enter your full name" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700">
+       Email
+      </label>
+      <input class="w-full px-3 py-2 border rounded-lg" placeholder="Enter your email" type="email"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700">
+       Username
+      </label>
+      <input class="w-full px-3 py-2 border rounded-lg" placeholder="Choose a username" type="text"/>
+     </div>
+     <div class="mb-6">
+      <label class="block text-gray-700">
+       Password
+      </label>
+      <input class="w-full px-3 py-2 border rounded-lg" placeholder="Choose a password" type="password"/>
+     </div>
+     <button class="w-full bg-blue-500 text-white py-2 rounded-lg" type="submit">
+      Register
+     </button>
+    </form>
+    <p class="mt-4 text-center">
+     Already have an account?
+     <a class="text-blue-500 hover:underline" href="#">
+      Login
+     </a>
+    </p>
    </div>
   </div>
   <!-- Dashboard -->
@@ -74,7 +123,7 @@
       <h2 class="text-xl font-bold mb-4">
        Camera Access
       </h2>
-      <img alt="Placeholder image of a camera feed for facial recognition" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/5KsYgVqYuP4dEVyoUVwWIvSpy76UxoiSWZ6tRqcJCXec4E6JA.jpg" width="300"/>
+      <img alt="Placeholder image of a camera feed for facial recognition" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/UQWChf8SeFj7AEPc1rN16zXaIgQMrYCYTze241JeIRtLYoQPB.jpg" width="300"/>
       <button class="w-full bg-blue-500 text-white py-2 rounded-lg">
        Start Facial Recognition
       </button>
@@ -84,7 +133,7 @@
       <h2 class="text-xl font-bold mb-4">
        Location Access
       </h2>
-      <img alt="Placeholder image of a map showing various locations" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/6JwU0NYeX7TeKUFHrRy0wZpsBvdnlIyVfCkwcTLea4SbDnQPB.jpg" width="300"/>
+      <img alt="Placeholder image of a map showing various locations" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/wf71EUNM3IyEMq2pHaWkFRsDR1sJiNHvEYrXk1JafnXGGK0TA.jpg" width="300"/>
       <button class="w-full bg-blue-500 text-white py-2 rounded-lg">
        Access Google Maps
       </button>
@@ -154,7 +203,7 @@
       <h2 class="text-xl font-bold mb-4">
        Charts and Tables
       </h2>
-      <img alt="Placeholder image of a chart showing incident statistics" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/UXaWr5FmJ9KxOxRwh1exy8RMnkiPRevSMuYIyMpoDZu4wJ0TA.jpg" width="300"/>
+      <img alt="Placeholder image of a chart showing incident statistics" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/SSiayLVxmOJeASgk6RdOuZYyR4WgAtNreEWapm82dfNKMUonA.jpg" width="300"/>
       <button class="w-full bg-blue-500 text-white py-2 rounded-lg">
        Edit Charts
       </button>
