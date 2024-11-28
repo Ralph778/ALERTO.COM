@@ -1,300 +1,124 @@
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Alert-O CD-RRMO
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
- </head>
- <body class="font-roboto bg-gray-100">
-  <!-- Login Page -->
-  <div class="min-h-screen flex items-center justify-center bg-gray-200">
-   <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-    <h2 class="text-2xl font-bold mb-6 text-center">
-     Login to Alert-O
-    </h2>
-    <form>
-     <div class="mb-4">
-      <label class="block text-gray-700">
-       Username
-      </label>
-      <input class="w-full px-3 py-2 border rounded-lg" placeholder="Enter your username" type="text"/>
-     </div>
-     <div class="mb-6">
-      <label class="block text-gray-700">
-       Password
-      </label>
-      <input class="w-full px-3 py-2 border rounded-lg" placeholder="Enter your password" type="password"/>
-     </div>
-     <button class="w-full bg-blue-500 text-white py-2 rounded-lg" type="submit">
-      Login
-     </button>
-    </form>
-    <p class="mt-4 text-center">
-     Don't have an account?
-     <a class="text-blue-500 hover:underline" href="#">
-      Register
-     </a>
-    </p>
-   </div>
-  </div>
-  <!-- Register Page -->
-  <div class="min-h-screen flex items-center justify-center bg-gray-200">
-   <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-    <h2 class="text-2xl font-bold mb-6 text-center">
-     Register for Alert-O
-    </h2>
-    <form>
-     <div class="mb-4">
-      <label class="block text-gray-700">
-       Full Name
-      </label>
-      <input class="w-full px-3 py-2 border rounded-lg" placeholder="Enter your full name" type="text"/>
-     </div>
-     <div class="mb-4">
-      <label class="block text-gray-700">
-       Email
-      </label>
-      <input class="w-full px-3 py-2 border rounded-lg" placeholder="Enter your email" type="email"/>
-     </div>
-     <div class="mb-4">
-      <label class="block text-gray-700">
-       Username
-      </label>
-      <input class="w-full px-3 py-2 border rounded-lg" placeholder="Choose a username" type="text"/>
-     </div>
-     <div class="mb-6">
-      <label class="block text-gray-700">
-       Password
-      </label>
-      <input class="w-full px-3 py-2 border rounded-lg" placeholder="Choose a password" type="password"/>
-     </div>
-     <button class="w-full bg-blue-500 text-white py-2 rounded-lg" type="submit">
-      Register
-     </button>
-    </form>
-    <p class="mt-4 text-center">
-     Already have an account?
-     <a class="text-blue-500 hover:underline" href="#">
-      Login
-     </a>
-    </p>
-   </div>
-  </div>
-  <!-- Dashboard -->
-  <div class="min-h-screen flex flex-col">
-   <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold">
-     Alert-O Dashboard
-    </h1>
-    <nav>
-     <ul class="flex space-x-4">
-      <li>
-       <a class="hover:underline" href="#">
-        Home
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline" href="#">
-        Incidents
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline" href="#">
-        Users
-       </a>
-      </li>
-      <li>
-       <a class="hover:underline" href="#">
-        Settings
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
-   <main class="flex-grow p-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-     <!-- Camera Access and Facial Recognition -->
-     <div class="bg-white p-4 rounded-lg shadow-lg">
-      <h2 class="text-xl font-bold mb-4">
-       Camera Access
-      </h2>
-      <img alt="Placeholder image of a camera feed for facial recognition" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/UQWChf8SeFj7AEPc1rN16zXaIgQMrYCYTze241JeIRtLYoQPB.jpg" width="300"/>
-      <button class="w-full bg-blue-500 text-white py-2 rounded-lg">
-       Use Camera
-      </button>
-     </div>
-     <!-- Google Maps Location Access -->
-     <div class="bg-white p-4 rounded-lg shadow-lg">
-      <h2 class="text-xl font-bold mb-4">
-       Location Access
-      </h2>
-      <img alt="Placeholder image of a map showing various locations" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/wf71EUNM3IyEMq2pHaWkFRsDR1sJiNHvEYrXk1JafnXGGK0TA.jpg" width="300"/>
-      <button class="w-full bg-blue-500 text-white py-2 rounded-lg">
-       Access Google Maps
-      </button>
-     </div>
-     <!-- Incident Reporting -->
-     <div class="bg-white p-4 rounded-lg shadow-lg">
-      <h2 class="text-xl font-bold mb-4">
-       Report Incident
-      </h2>
-      <form>
-       <div class="mb-4">
-        <label class="block text-gray-700">
-         Incident Type
-        </label>
-        <select class="w-full px-3 py-2 border rounded-lg">
-         <option>
-          Fire
-         </option>
-         <option>
-          Vehicular Accident
-         </option>
-         <option>
-          Flood
-         </option>
-         <option>
-          Typhoon
-         </option>
-         <option>
-          Earthquake
-         </option>
-         <option>
-          Others
-         </option>
-        </select>
-       </div>
-       <div class="mb-4">
-        <label class="block text-gray-700">
-         Description
-        </label>
-        <textarea class="w-full px-3 py-2 border rounded-lg" placeholder="Describe the incident"></textarea>
-       </div>
-       <button class="w-full bg-blue-500 text-white py-2 rounded-lg" type="submit">
-        Submit Report
-       </button>
-      </form>
-     </div>
-     <!-- Go Live Feature -->
-     <div class="bg-white p-4 rounded-lg shadow-lg">
-      <h2 class="text-xl font-bold mb-4">
-       Go Live
-      </h2>
-      <button class="w-full bg-red-500 text-white py-2 rounded-lg">
-       Start Live Stream
-      </button>
-     </div>
-     <!-- Contact Dispatcher -->
-     <div class="bg-white p-4 rounded-lg shadow-lg">
-      <h2 class="text-xl font-bold mb-4">
-       Contact Dispatcher
-      </h2>
-      <button class="w-full bg-green-500 text-white py-2 rounded-lg">
-       Call Dispatcher
-      </button>
-     </div>
-     <!-- Editable Charts and Tables -->
-     <div class="bg-white p-4 rounded-lg shadow-lg">
-      <h2 class="text-xl font-bold mb-4">
-       Charts and Tables
-      </h2>
-      <img alt="Placeholder image of a chart showing incident statistics" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/SSiayLVxmOJeASgk6RdOuZYyR4WgAtNreEWapm82dfNKMUonA.jpg" width="300"/>
-      <button class="w-full bg-blue-500 text-white py-2 rounded-lg">
-       Edit Charts
-      </button>
-     </div>
-     <!-- Registered Users -->
-     <div class="bg-white p-4 rounded-lg shadow-lg">
-      <h2 class="text-xl font-bold mb-4">
-       Registered Users
-      </h2>
-      <table class="w-full border-collapse">
-       <thead>
-        <tr>
-         <th class="border p-2">
-          Name
-         </th>
-         <th class="border p-2">
-          Phone Number
-         </th>
-         <th class="border p-2">
-          Actions
-         </th>
-        </tr>
-       </thead>
-       <tbody>
-        <tr>
-         <td class="border p-2">
-          John Doe
-         </td>
-         <td class="border p-2">
-          123-456-7890
-         </td>
-         <td class="border p-2">
-          <button class="bg-yellow-500 text-white px-2 py-1 rounded">
-           Edit
-          </button>
-          <button class="bg-red-500 text-white px-2 py-1 rounded">
-           Delete
-          </button>
-         </td>
-        </tr>
-        <tr>
-         <td class="border p-2">
-          Jane Smith
-         </td>
-         <td class="border p-2">
-          098-765-4321
-         </td>
-         <td class="border p-2">
-          <button class="bg-yellow-500 text-white px-2 py-1 rounded">
-           Edit
-          </button>
-          <button class="bg-red-500 text-white px-2 py-1 rounded">
-           Delete
-          </button>
-         </td>
-        </tr>
-        <tr>
-         <td class="border p-2">
-          Alice Johnson
-         </td>
-         <td class="border p-2">
-          555-123-4567
-         </td>
-         <td class="border p-2">
-          <button class="bg-yellow-500 text-white px-2 py-1 rounded">
-           Edit
-          </button>
-          <button class="bg-red-500 text-white px-2 py-1 rounded">
-           Delete
-          </button>
-         </td>
-        </tr>
-       </tbody>
-      </table>
-     </div>
-     <!-- Notification System -->
-     <div class="bg-white p-4 rounded-lg shadow-lg">
-      <h2 class="text-xl font-bold mb-4">
-       Notifications
-      </h2>
-      <div class="mb-4">
-       <p class="text-gray-700">
-        A dispatcher is on its way. Estimated arrival time: 10 minutes.
-       </p>
-      </div>
-      <button class="w-full bg-blue-500 text-white py-2 rounded-lg">
-       Acknowledge
-      </button>
-     </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerto System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div id="login-form" class="form-box">
+            <h1>Login</h1>
+            <form id="loginForm">
+                <input type="text" id="login-username" placeholder="Username" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <button id="show-signup-form" type="button">Sign Up</button>
+            <button id="facialRecButton">Login with Facial Recognition</button>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div id="signup-form" class="form-box hidden">
+            <h1>Sign Up</h1>
+            <form id="signupForm">
+                <input type="text" id="signup-username" placeholder="Username" required>
+                <input type="password" id="signup-password" placeholder="Password" required>
+                <select id="signup-role" required>
+                    <option value="user">User</option>
+                    <option value="dispatcher">Dispatcher</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <button type="submit">Sign Up</button>
+            </form>
+            <button id="show-login-form" type="button">Back to Login</button>
+        </div>
+
+        <!-- Dashboard (Hidden by default) -->
+        <div id="dashboard" class="hidden">
+            <h1>Dashboard</h1>
+            <div class="nav-bar">
+                <button id="announcements">Announcements</button>
+                <button id="advisories">Advisories</button>
+                <button id="myProfileButton">My Profile</button>
+                <button id="contactDispatcher">Contact Dispatcher</button>
+                <button id="logout">Logout</button>
+            </div>
+
+            <div class="content">
+                <h2>Incident Dashboard</h2>
+                <table id="incidentTable">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Status</th>
+                            <th>ETA</th>
+                            <th>Location</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Populated dynamically with JavaScript -->
+                    </tbody>
+                </table>
+                <button id="addIncidentButton" class="hidden">Add Incident</button>
+                <div class="chart-container">
+                    <h3>Incident Statistics</h3>
+                    <div class="chart-container">
+                        <h3>Incident Statistics</h3>
+                        <canvas id="incidentChart"></canvas>
+                        <!-- Stock Photo of a Chart -->
+                        <img src="https://images.unsplash.com/photo-1604550086602-bb3e5c8f7f60" alt="Stock Photo of a Chart" class="incident-chart-photo">
+                        <!-- Stock Photo of a Pie Chart -->
+                        <img src="https://images.unsplash.com/photo-1584697964157-2ad104547ad5" alt="Pie Chart Stock Photo" class="incident-pie-chart-photo">
+                         <!-- Stock Photo of a Bar Graph -->
+                        <img src="https://images.unsplash.com/photo-1580781324693-24260b45c803" alt="Bar Graph Stock Photo" class="incident-bar-graph-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- My Profile Form -->
+        <div id="myProfile" class="hidden">
+            <h2>My Profile</h2>
+            <form id="profileForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" placeholder="Enter first name" required>
+
+                <label for="middleName">Middle Name:</label>
+                <input type="text" id="middleName" placeholder="Enter middle name">
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" placeholder="Enter last name" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" placeholder="Enter your age" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" placeholder="Enter your address" required>
+
+                <label for="contactNumber">Contact Number:</label>
+                <input type="text" id="contactNumber" placeholder="Enter contact number" required>
+
+                <label for="validID">Upload Valid ID:</label>
+                <input type="file" id="validID" accept="image/*" required>
+
+                <label for="selfie">Upload Selfie:</label>
+                <input type="file" id="selfie" accept="image/*" required>
+
+                <button type="submit">Save Profile</button>
+            </form>
+            <!-- Back to Dashboard Button -->
+                <button id="backToDashboardButton" type="button">Back to Dashboard</button>
+        </div>
     </div>
-   </main>
-  </div>
- </body>
+
+    <!-- Link to External JS Script -->
+    <script src="script.js"></script>
+</body>
+
 </html>
