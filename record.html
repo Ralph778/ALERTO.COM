@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Reports</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="report-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile">
+                <h3>Dashboard</h3>
+                <ul class="sidebar-menu">
+                    <li><a href="homepage.html">HOME PAGE</a></li>
+                    <li><a href="notif.html">NOTIFICATION</a></li>
+                    <li><a href="record.html">RECORDS</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="settings.html">SETTINGS</a></li>
+                    <li><a href="login.html" id="logout-btn">LOG OUT</a></li>
+                </ul>
+            </div>
+        </aside>
+        
+        <!-- Logo Section -->
+        <div class="logo-container">
+            <img src="images/logo.jpg" alt="Alert-O Logo" class="logo">
+        </div>
+        
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Dashboard Stats Section -->
+            <div class="dashboard-stats">
+                <div class="stat">
+                    <h3>Total Reports</h3>
+                    <p id="total-reports">150</p>
+                </div>
+                <div class="stat">
+                    <h3>Pending Reports</h3>
+                    <p id="pending-reports">35</p>
+                </div>
+                <div class="stat">
+                    <h3>Approved Reports</h3>
+                    <p id="approved-reports">100</p>
+                </div>
+            </div>
+
+            <!-- Recent Reports Table -->
+            <div class="recent-reports">
+                <h3>Recent Reports</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Accident Type</th>
+                            <th>Description</th>
+                            <th>Location</th>
+                            <th>Injured</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="reports-table">
+                        <!-- Report rows will be injected here dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts and Tables Section -->
+    <div class="chart-container">
+        <h1>Charts and Tables</h1>
+        <img src="images/Chart1.png" alt="Chart showing types of disasters reported in the system" class="responsive-chart">
+        <img src="images/pie.jpg" alt="Pie chart showing pattern of natural hazards distribution" class="responsive-chart">
+        <img src="images/table2.png" alt="Table displaying causes of road traffic accidents" class="responsive-chart">
+        <img src="images/table1.png" alt="Table summarizing natural disasters statistics" class="responsive-chart">
+    </div>
+
+    <!-- Link to JavaScript File -->
+    <script src="js/script.js"></script>
+</body>
+</html>

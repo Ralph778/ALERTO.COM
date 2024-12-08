@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up - Alert-O</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Include Google API -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-card">
+            <h1>Sign-Up</h1>
+            
+            <!-- Google Sign-In Button -->
+            <div class="google-signin">
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            </div>
+
+            <!-- Face Scan Section -->
+            <div class="face-scan">
+                <button type="button" id="face-scan-btn">SCAN FACE</button>
+            </div>
+
+            <form id="signup-info-form">
+                <!-- Personal Information -->
+                <div class="input-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+                <div class="input-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <div class="input-group">
+                    <label for="barangay">Barangay</label>
+                    <input type="text" id="barangay" name="barangay" required>
+                </div>
+                <div class="input-group">
+                    <label for="municipality">Municipality</label>
+                    <input type="text" id="municipality" name="municipality" required>
+                </div>
+
+                <!-- Email Section -->
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <!-- ID Upload Section -->
+                <div class="input-group">
+                    <label for="id-type">Select Type of ID</label>
+                    <select id="id-type" name="id-type" required>
+                        <option value="">Choose ID Type</option>
+                        <option value="passport">Passport</option>
+                        <option value="drivers_license">Driver's License</option>
+                        <option value="voter_id">Voter's ID</option>
+                        <option value="national_id">National ID</option>
+                        <option value="sss">SSS</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="valid-id-front">Upload Valid ID (Front)</label>
+                    <input type="file" id="valid-id-front" name="valid-id-front" accept="image/*" required>
+                </div>
+                <div class="input-group">
+                    <label for="valid-id-back">Upload Valid ID (Back)</label>
+                    <input type="file" id="valid-id-back" name="valid-id-back" accept="image/*" required>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="input-group">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{10}" placeholder="09123456789" required>
+                </div>
+
+                <!-- Buttons for Next and Back -->
+                <div class="button-group">
+                    <a href="signup.html" class="button">Back</a>
+                    <button type="submit" class="button">Next</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
