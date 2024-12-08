@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Vehicular Accident - Alert-O</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="report-container">
+        <!-- Sidebar (reuse the same sidebar as in the admin page) -->
+        <aside class="sidebar">
+            <div class="profile">
+                <div class="profile-pic">
+                    <!-- Placeholder for User Image -->
+                    <img src="images/blank.jpg" alt="">
+                </div>
+                <div class="profile-pic">
+                    <img src="images/blank.jpg" alt="Dispatcher Icon">
+                </div>
+                <h3>Dispatcher</h3>
+                <ul class="sidebar-menu">
+                    <li><a href="dispatch.html">HOME PAGE</a></li>
+                    <li><a href="notif.html">NOTIFICATION</a></li>
+                    <li><a href="record.html">RECORDS</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="settings.html">SETTINGS</a></li>
+                    <li><a href="index.html">LOG OUT</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Logo Section -->
+        <div class="logo-container">
+            <img src="images/logo.jpg" alt="Alert-O Logo" class="logo">
+        </div>
+
+        <!-- Main Content: Accident Report Form -->
+        <main class="report-form">
+            <h1>Report  Accident</h1>
+            <form id="accident-form">
+                <div class="input-group">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" placeholder="Enter accident location" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="casualties">Number of Casualties:</label>
+                    <input type="number" id="casualties" name="casualties" min="0" placeholder="Enter number of casualties" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="photo">Upload Photo (Optional):</label>
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                </div>
+
+                <div class="submit-btn">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
